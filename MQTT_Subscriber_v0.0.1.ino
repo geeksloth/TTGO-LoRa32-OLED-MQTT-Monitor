@@ -7,10 +7,10 @@ const bool debug = false;
 uint8_t ledPin = 16; // Onboard LED reference
 SSD1306 display(0x3c, 5, 4); // instance for the OLED. Addr, SDA, SCL
 
-const char* ssid = "WeCP_TL_MR3220";
-const char* password = "24682468";
-const char* mqtt_server = "192.168.1.106";
-const char* mqtt_sub_topic = "#";
+const char* ssid = "your ssid goes here";
+const char* password = "your wifi password";
+const char* mqtt_server = "your mqtt broker ip"; #eg. 192.168.1.10
+const char* mqtt_sub_topic = "#"; # use hash sign for all topics, or define a specific topic
 String callbackMsg = "";
 
 const uint8_t yellow_height = 14; // pixcels
